@@ -2,7 +2,7 @@ name: S For Snake
 
 on:
   schedule:
-    - cron: '5 * * * *'
+    - cron: '* * * * *'
 
 jobs:
   update-snake:
