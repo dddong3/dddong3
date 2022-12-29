@@ -2,7 +2,7 @@ name: S For Snake
 
 on:
   schedule:
-    - cron: '0 0 * * *'
+    - cron: '* * * * *'
 
 jobs:
   update-snake:
@@ -11,6 +11,7 @@ jobs:
         - name: generate snake
           uses: Platane/snk/svg-only@v2
           with:
+            branch: snake
             github_user_name: ${{ github.repository_owner }}
             outputs: |
               dist/github-contribution-grid-snake.svg
